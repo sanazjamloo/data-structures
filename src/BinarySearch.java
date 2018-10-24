@@ -9,7 +9,7 @@
 public class BinarySearch {
 	
 	int size;   //size of the array
-	int [] data;  // name of the array
+	int [] array;  // name of the array
 
 	public boolean binarySearch (int key) {
 		//low is the beginning of the remaining list, 
@@ -25,11 +25,11 @@ public class BinarySearch {
 			
 			//calculate the middle so we can divide the list into two pieces.
 			int middle = (low + high) /2; 
-			if (data[middle] == key) {
+			if (array[middle] == key) {
 				return true;
-			} if (data[middle] < key) {
+			} if (array[middle] < key) {
 				low = middle + 1;
-			} if (data[middle] > key) {
+			} if (array[middle] > key) {
 				high = middle - 1;
 			}
 		}
