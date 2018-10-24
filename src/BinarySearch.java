@@ -1,3 +1,10 @@
+/*  Binary search is a search algorithm that finds the position of a target value within
+ *  a sorted array. Binary search compares the target value to the middle element of the
+ *  array; if they are unequal, the half in which the target cannot lie is eliminated and
+ *   the search continues on the remaining half until it is successful.
+ */
+
+//Iterative approach
 
 public class BinarySearch {
 	
@@ -5,10 +12,11 @@ public class BinarySearch {
 	int [] data;  // name of the array
 
 	public boolean binarySearch (int key) {
-		//low is the variable that tells us where the beginning of the remaining list is, 
+		//low is the beginning of the remaining list, 
 		//and i give it an initial value of 0.
 		int low = 0;
-		//high is the variable that tells us where the end of the remaining list is, 
+		
+		//high is the end of the remaining list, 
 		//and i give it an initial value of the last thing in the list.
 		int high = size -1;
 		
